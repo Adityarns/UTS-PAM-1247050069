@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".OrderActivity">
+
+
+    <!-- Back Button at top-left -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_glass_card"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/kembali"
+        android:padding="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_glass_card"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:text="@string/ringkasan_pesanan_n_order"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <ScrollView
+            android:layout_width="280dp"
+            android:layout_height="110dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:id="@+id/containerOrderItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/inputAddress"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/alamat_pengiriman"
+            android:textColorHint="@color/text_secondary"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:background="@drawable/bg_glass_card"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/inputLandmark"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/patokan_alamat_lengkap"
+            android:textColorHint="@color/text_secondary"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:background="@drawable/bg_glass_card"
+            android:inputType="textLongMessage" />
+
+        <Button
+            android:id="@+id/btnSubmitOrder"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/konfirmasi_pesanan_button"
+            android:textColor="@color/button_text"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="@color/text_primary" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

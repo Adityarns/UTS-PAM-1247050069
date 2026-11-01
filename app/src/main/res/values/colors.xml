@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_dark">#0F1E15</color>
+    <color name="glass_bg">#18FFFFFF</color>
+    <color name="glass_stroke">#4DFFFFFF</color>
+    <color name="text_primary">#F4F8F4</color>
+    <color name="text_secondary">#B5C5B8</color>
+    <color name="button_bg">#C5D5B8</color>
+    <color name="button_text">#16281A</color>
+    <color name="hint_bg">#f8f6f7</color>
+    <color name="dot_active">#C5D5B8</color>
+    <color name="dot_inactive">#445B4B</color>
+    <color name="link_text">#2A835F</color>
+</resources>
